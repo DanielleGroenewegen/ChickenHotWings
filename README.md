@@ -1,5 +1,7 @@
 # RAW-C
 
+This is a fork from the original RAW-C repository, see below.
+
 GitHub page for RAW-C (Relatedness of Ambiguous Words——in Context). [[Link to paper](https://aclanthology.org/2021.acl-long.550/)]. 
 
 To cite:
