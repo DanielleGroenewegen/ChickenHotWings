@@ -58,6 +58,8 @@ We also include [`data/processed/raw-c_with_dominance.csv`](https://github.com/s
 
 Note that dominance judgments are only included for **different sense** sentence pairs. 
 
+IN THIS FORK: For the purposes of the assignment, you will also find the original stimuli.csv -- this includes all the strings, words, and has M1/2/a/b columns that have the relevant sentences as cells. This dataframe has more entries however, and you will only need the ones that are in the final processed dataframe for the purposes of replication.
+
 ## Language modeling
 
 The file `src/modeling/get_distances.py` can be used to run each sentence pair through BERT and ELMo, and extract the cosine distance from the contextualized representations:
@@ -66,7 +68,7 @@ The file `src/modeling/get_distances.py` can be used to run each sentence pair t
 python src/modeling/get_distances.py
 ```
 
-**Note (12/2/2024)**: This script requires the [`bert-embedding` package](https://pypi.org/project/bert-embedding/), as well as the [`allennlp` package](https://github.com/allenai/allennlp). Because the HuggingFace `transformers` package is more widely used, I am working to update this script with the option to run it with `transformers`.
+**Note (12/2/2024)**: This script requires the [`bert-embedding` package](https://pypi.org/project/bert-embedding/), as well as the [`allennlp` package](https://github.com/allenai/allennlp). Because the HuggingFace `transformers` package is more widely used, I am working to update this script with the option to run it with `transformers`. 
 
 ## Analysis scripts
 
